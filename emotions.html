@@ -63,11 +63,95 @@
             font-style: italic;
             color: #555;
         }
+        /* Дополнительные стили для шкалы эмоций */
+        .emotion-scale {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .emotion-scale table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .emotion-scale th, .emotion-scale td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .emotion-scale th {
+            background-color: #e2e2e2;
+        }
+        .emotion-scale td:first-child {
+            width: 10%;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
     <h1>Описание Эмоций</h1>
+
+    <!-- Шкала силы эмоций -->
+    <section id="emotion_scale" class="emotion-scale">
+        <h2>Шкала силы эмоций</h2>
+        <div class="description">Эта шкала предназначена для оценки интенсивности эмоций от 0 до 10.</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Уровень</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td><strong>Отсутствие эмоции</strong> — Полное отсутствие эмоционального состояния.</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><strong>Очень слабая</strong> — Незаметное, едва ощущаемое эмоциональное состояние.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>Слабая</strong> — Лёгкое чувство, которое не влияет на поведение.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>Низкая</strong> — Умеренное чувство, которое может слегка повлиять на настроение.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>Умеренная</strong> — Чётко ощущаемая эмоция, но контролируемая и не влияющая значительно на поведение.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>Средняя</strong> — Эмоция, влияющая на настроение и поведение, требующая внимания.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><strong>Выше среднего</strong> — Сильное эмоциональное состояние, заметно влияющее на решения и действия.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>Сильная</strong> — Очень интенсивное чувство, значительно влияющее на поведение и восприятие.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><strong>Очень сильная</strong> — Почти всепоглощающая эмоция, существенно ограничивающая рациональное мышление.</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><strong>Крайне сильная</strong> — Почти полностью контролирующая эмоция, сильно ограничивающая возможности.</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><strong>Всепоглощающая</strong> — Полностью контролирующая поведение, неспособность подавить эмоцию.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- Конец шкалы силы эмоций -->
 
     <!-- Оглавление -->
     <nav>
